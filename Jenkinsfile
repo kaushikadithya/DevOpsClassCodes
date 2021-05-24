@@ -30,6 +30,7 @@ pipeline{
            stage('UnitTest'){
                agent any
               steps{
+		  echo 'UnitTest'    
                   sh 'mvn test'
               }
                post {
